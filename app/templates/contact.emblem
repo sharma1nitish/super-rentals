@@ -12,5 +12,6 @@ p
   </address>
 
 p: a href="tel:503.555.1212" (503)555-1212
-
 p: a href="mailto:superrentalsrep@superrentals.com" superrentalsrep@superrentals.com
+
+= link-to 'about' | About
