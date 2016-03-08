@@ -2,12 +2,8 @@ h1 Welcome to Super Rentals
 
 p We hope you find exactly what you're looking for in a place to stay.
 
-each model as |rental|
-  h2 #{rental.title}
-  p Owner: #{rental.owner}
-  p Type: #{rental.type}
-  p Location: #{rental.city}
-  p Number of bedrooms: #{rental.bedrooms}
+each model as |rentalUnit|
+  rental-listing rental=rentalUnit
 
 p: link-to 'about' | About
 p: link-to 'contact' | Click here to contact us.

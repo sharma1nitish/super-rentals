@@ -1,0 +1,5 @@
+h2 #{rental.title}
+p Owner: #{rental.owner}
+p Type: #{rental.type}
+p Location: #{rental.city}
+p Number of bedrooms: #{rental.bedrooms}
