@@ -3,3 +3,10 @@ p Owner: #{rental.owner}
 p Type: #{rental.type}
 p Location: #{rental.city}
 p Number of bedrooms: #{rental.bedrooms}
+
+if isImageShowing
+  p: img src="#{rental.image}" alt="#{rental.type}" width="500"
+  button click="imageHide" Hide Image
+else
+  button click="imageShow" Show Image
+
