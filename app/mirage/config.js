@@ -35,9 +35,11 @@ export default function() {
         }
       }];
 
-    if(request.queryParams.city !== undefined) {
-      let filteredRentals = rentals.filter(function(i) {
-        return i.attributes.city.toLowerCase().indexOf(request.queryParams.city.toLowerCase()) !== -1;
+    let cityParams = request.queryParams.city;
+
+    if(cityParams !== undefined) {
+      let filteredRentals = rentals.filter(function(rental) {
+        return rental.attributes.city.toLowerCase().indexOf(cityParams.toLowerCase()) !== -1;
       });
       return { data: filteredRentals };
     } else {

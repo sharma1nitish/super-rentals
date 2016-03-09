@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   filter: null,
   actions: {
     autoComplete() {
-      this.get('autoComplete')(this.get('filter'));
+      this.get('autoComplete')(this.get('filter').trim());
     }
   }
 });
