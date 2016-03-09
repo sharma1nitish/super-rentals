@@ -1,5 +1,4 @@
 p City: #{input value=filter key-up=(action 'autoComplete' filter)}
-button click="search" Search
 
 ul
   each filteredList as |item|
