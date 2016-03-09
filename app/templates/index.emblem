@@ -2,7 +2,7 @@ h1 Welcome to Super Rentals
 
 p We hope you find exactly what you're looking for in a place to stay.
 
-filter-listing filteredList=filteredList autoComplete=(action 'autoComplete')
+filter-listing autoComplete=(action 'autoComplete')
 
 each model as |rentalUnit|
   rental-listing rental=rentalUnit
