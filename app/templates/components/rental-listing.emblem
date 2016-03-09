@@ -1,6 +1,6 @@
 h2 #{rental.title}
 p Owner: #{rental.owner}
-p Type: #{rental.type}
+p Type: #{rental-property-type rental.type} - #{rental.type}
 p Location: #{rental.city}
 p Number of bedrooms: #{rental.bedrooms}
 
