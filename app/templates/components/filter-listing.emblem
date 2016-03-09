@@ -1,4 +1,4 @@
-= input value=filter key-up=(action 'autoComplete' filter)
+p City: #{input value=filter key-up=(action 'autoComplete' filter)}
 button click="search" Search
 
 ul
