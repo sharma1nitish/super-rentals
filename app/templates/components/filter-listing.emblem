@@ -1,6 +1,3 @@
 p City: #{input value=filter key-up=(action 'autoComplete' filter)}
 
-ul
-  each filteredList as |item|
-    li{action 'choose' item.city} = item.city
 
