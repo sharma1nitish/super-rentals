@@ -5,9 +5,6 @@ export default Ember.Component.extend({
   actions: {
     autoComplete() {
       this.get('autoComplete')(this.get('filter'));
-    },
-    choose(city) {
-      this.set('filter', city);
     }
   }
 });
